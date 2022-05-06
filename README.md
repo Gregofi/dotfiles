@@ -1,2 +1,10 @@
-# dotfiles
-Contains various dotfiles for linux and his apps.
+# Dotfiles
+
+Setup:
+
+- WM: I3Gaps
+- X-Compositor: Compton
+- Shell: ZSH - Prezto
+- Bar: Polybar
+- Menu: Rofi
+
