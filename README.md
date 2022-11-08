@@ -2,9 +2,9 @@
 
 Setup:
 
-- WM: I3Gaps
-- X-Compositor: Compton
+- WM: i3
+- X-Compositor: compton
 - Shell: ZSH - Prezto
-- Bar: Polybar
-- Menu: Rofi
+- Bar: i3status-rs
+- Menu: dmenu
 
