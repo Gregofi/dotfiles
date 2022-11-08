@@ -1,3 +1,19 @@
+theme = "solarized-light"
+
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage:6#100} {percentage} {time}"
+
+[[block]]
+block = "networkmanager"
+on_click = "alacritty -e nmtui"
+ap_format = "{ssid} {strength}"
+device_format = "{icon} {ap}"
+interface_name_exclude = ['br\-[0-9a-f]{12}', 'docker\d+']
+interface_name_include = []
+
 [[block]]
 block = "hueshift"
 hue_shifter = "redshift"
@@ -25,19 +41,6 @@ block = "backlight"
 minimum = 20
 maximum = 100
 cycle = [100, 75, 50, 25]
-
-[[block]]
-block = "networkmanager"
-on_click = "alacritty -e nmtui"
-ap_format = "{ssid} {strength}"
-device_format = "{icon} {ap}"
-interface_name_exclude = ['br\-[0-9a-f]{12}', 'docker\d+']
-interface_name_include = []
-
-[[block]]
-block = "battery"
-interval = 10
-format = "{percentage:6#100} {percentage} {time}"
 
 [[block]]
 block = "disk_space"
