@@ -1,5 +1,5 @@
 theme = "solarized-light"
-
+icons = "awesome"
 
 [[block]]
 block = "battery"
@@ -47,6 +47,8 @@ block = "disk_space"
 path = "/"
 info_type = "used"
 format = "{icon} {used}/{total} ({available})"
+alert = 90.0
+warning = 80.0
 
 [[block]]
 block = "pacman"
