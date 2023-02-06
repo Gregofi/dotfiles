@@ -23,6 +23,7 @@ lua require("plugins")
 
 " Plugin specific configs
 lua require("configs/tree")
+lua require("configs/lspconfig")
 
 " Colorscheme
 set background=light

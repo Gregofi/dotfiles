@@ -1,10 +1,13 @@
 # Dotfiles
 
-Setup:
+## Setup
 
+- Terminal: allacrity
 - WM: i3
-- X-Compositor: compton
 - Shell: ZSH - Prezto
 - Bar: i3status-rs
 - Menu: dmenu
+- Editor: neovim
+
+## Neovim
 

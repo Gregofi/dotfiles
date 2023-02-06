@@ -14,4 +14,7 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly'
     }
+
+    -- Configurations for neovim LSP
+    use 'neovim/nvim-lspconfig'
 end)
