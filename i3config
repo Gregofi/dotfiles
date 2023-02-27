@@ -93,7 +93,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-# bindsym $mod+h split h
+bindsym $mod+x split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -196,7 +196,7 @@ bindsym $mod+r mode "resize"
 bar {
     font pango: DejaVu Sans Mono, Font Awesome 6 Free, 10 
     position bottom
-    status_command /bin/i3status-rs .config/i3status-rs/config
+    status_command /bin/i3status-rs ~/.config/i3status-rs/config.toml
     colors {
        separator #666666 
        background #222222
