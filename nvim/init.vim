@@ -29,3 +29,5 @@ lua require("configs/lspconfig")
 set background=light
 colorscheme gruvbox
 
+" Errors in LSP appear instead of linenumber
+set signcolumn=number
