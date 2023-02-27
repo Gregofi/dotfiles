@@ -7,21 +7,21 @@ icons = "awesome4"
 [[block]]
 block = "battery"
 interval = 10
-format = "$icon $percentage $time "
+format = " $icon $percentage $time "
 
 [[block]]
 block = "net"
 device = 'br\-[0-9a-f]{12}'
 [[block.click]]
 button = "left"
-cmd = "alacritty -e nmtui"
+cmd = "alacritty -e nmtui "
 
 [[block]]
 block = "net"
 device = 'docker\d+'
 [[block.click]]
 button = "left"
-cmd = "alacritty -e nmtui"
+cmd = "alacritty -e nmtui "
 
 [[block]]
 block = "hueshift"
@@ -31,8 +31,8 @@ click_temp = 3500
 
 [[block]]
 block = "memory"
-format = "$icon $mem_used/$mem_total($mem_used_percents)"
-format_alt = "$icon $swap_used/$swap_total($swap_used_percents)"
+format = "$icon $mem_used/$mem_total($mem_used_percents) "
+format_alt = "$icon $swap_used/$swap_total($swap_used_percents) "
 interval = 5
 warning_mem = 80
 warning_swap = 80
@@ -52,15 +52,15 @@ cycle = [100, 75, 50, 25]
 block = "disk_space"
 path = "/"
 info_type = "used"
-format = "$icon $used/$total ($available)"
+format = "$icon $used/$total ($available) "
 alert = 90.0
 warning = 80.0
 
 [[block]]
 block = "pacman"
 interval = 600
-format = "$pacman updates available "
-format_singular = "$pacman update available "
+format = " $pacman updates available "
+format_singular = " $pacman update available "
 format_up_to_date = ""
 critical_updates_regex = "(linux|linux-lts|linux-zen)"
 
