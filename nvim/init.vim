@@ -24,6 +24,7 @@ lua require("plugins")
 " Plugin specific configs
 lua require("configs/tree")
 lua require("configs/lspconfig")
+lua require("configs/telescope")
 
 " Colorscheme
 set background=light

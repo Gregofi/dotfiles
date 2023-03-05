@@ -10,4 +10,5 @@
 - Editor: neovim
 
 ## Neovim
+The telescope requires `ripgrep` package to work.
 

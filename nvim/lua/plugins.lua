@@ -17,4 +17,10 @@ return require('packer').startup(function(use)
 
     -- Configurations for neovim LSP
     use 'neovim/nvim-lspconfig'
+
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
 end)
