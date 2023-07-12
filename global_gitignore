@@ -1,0 +1,2 @@
+# Register with `git config --global core.excludesFile <path>`
+.luarc.json
