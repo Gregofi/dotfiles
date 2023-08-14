@@ -12,3 +12,8 @@
 ## Neovim
 The telescope requires `ripgrep` package to work.
 
+## Pacman packages
+These packages are recommended to install when installing Arch:
+```
+networkmanager gcc git ttf-dejavu ttf-liberation noto-fonts
+```
