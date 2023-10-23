@@ -1,0 +1,6 @@
+harpoon_marker = require('harpoon.mark')
+harpoon_ui = require('harpoon.ui')
+vim.keymap.set('n', '<leader>m', harpoon_marker.add_file)
+vim.keymap.set('n', '<leader>hh', harpoon_ui.toggle_quick_menu)
+vim.keymap.set('n', '<leader>hn', harpoon_ui.nav_next)
+vim.keymap.set('n', '<leader>hp', harpoon_ui.nav_prev)
