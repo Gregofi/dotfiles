@@ -2,7 +2,7 @@
 theme = "solarized-light"
 
 [icons]
-icons = "awesome4"
+icons = "material-nf"
 
 [[block]]
 block = "battery"

@@ -2,9 +2,9 @@
 
 ## Setup
 
-- Terminal: allacrity
+- Terminal: alacritty
 - WM: i3
-- Shell: ZSH - Prezto
+- Shell: ZSH - OMZ
 - Bar: i3status-rs
 - Menu: dmenu
 - Editor: neovim
@@ -15,5 +15,5 @@ The telescope requires `ripgrep` package to work.
 ## Pacman packages
 These packages are recommended to install when installing Arch:
 ```
-networkmanager gcc git ttf-dejavu ttf-liberation noto-fonts
+networkmanager gcc git ttf-dejavu ttf-fira-code
 ```
