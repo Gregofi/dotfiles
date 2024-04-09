@@ -3,10 +3,10 @@ set $mod Mod4
 # Default
 font pango: DejaVu Sans Mono, Font Awesome 6, 10
 
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- swaylock --nofork
 
 # I3 Lock - Doesn't seem to work, fix for sway
-# bindsym $mod+Shift+x exec i3lock -c 000000
+bindsym $mod+Shift+x exec swaylock -c 000000
 # exec xautolock -time 15 -locker i3lock
 
 # wallpaper, Doesn't seem to work
@@ -15,6 +15,9 @@ exec feh --bg-scale ~/wallpaper/taycan1.jpg
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 # exec --no-startup-id nm-applet
+
+# screenshots
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

@@ -14,6 +14,12 @@ The telescope requires `ripgrep` package to work.
 
 ## Pacman packages
 These packages are recommended to install when installing Arch:
-```
-networkmanager gcc git ttf-dejavu ttf-fira-code
+
+```bash
+sudo pacman -Syu \
+networkmanager gcc git ttf-dejavu ttf-fira-code \
+wl-copy \
+slurp \
+wl-clipboard \
+grim
 ```

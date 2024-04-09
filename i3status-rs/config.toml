@@ -40,6 +40,9 @@ critical_mem = 95
 critical_swap = 95
 
 [[block]]
+block = "sound"
+
+[[block]]
 block = "cpu"
 
 [[block]]
@@ -72,8 +75,3 @@ block = "time"
 format = "$timestamp.datetime(f:'%a %d/%m %R')"
 timezone = "Europe/Prague"
 interval = 7
-
-[[block]]
-block = "custom"
-command = "echo \uf011"
-interval = "once"
