@@ -12,6 +12,8 @@
 ## Neovim
 The telescope requires `ripgrep` package to work.
 
+Inspired by https://github.com/VonHeikemen/lazy-template/tree/main
+
 ## Pacman packages
 These packages are recommended to install when installing Arch:
 
