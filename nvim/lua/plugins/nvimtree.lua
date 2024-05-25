@@ -24,4 +24,8 @@ Plugin.opts = {
    on_attach = on_attach,
 }
 
+Plugin.dependencies = {
+    {'kyazdani42/nvim-web-devicons'},
+}
+
 return Plugin
