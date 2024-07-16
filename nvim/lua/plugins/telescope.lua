@@ -1,5 +1,7 @@
 local Plugin = {'nvim-telescope/telescope.nvim'}
 
+Plugin.version = '^0.1.8'
+
 Plugin.dependencies = {
     {'nvim-lua/plenary.nvim'},
 }

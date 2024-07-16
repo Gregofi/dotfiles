@@ -1,9 +1,9 @@
-local LSPConfig = {
+local LspZero = {
     'VonHeikemen/lsp-zero.nvim'
 }
 
-LSPConfig.opts = {
-    branch = "v3.x",
+LspZero.opts = {
+    branch = "v4.x",
 }
 
 -- ===== Mason =====
@@ -12,7 +12,7 @@ local Mason = {'williamboman/mason.nvim'}
 local MasonLspConfig = {'williamboman/mason-lspconfig.nvim'}
 
 return {
-    LSPConfig,
+    LspZero,
 
     Mason,
     MasonLspConfig,
