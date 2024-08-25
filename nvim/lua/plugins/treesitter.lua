@@ -14,6 +14,13 @@ Plugin.opts = {
   	                     "c", "lua", "vim", "vimdoc", "go" },
     highlight = {
         enable = true,
+        disable = function(lang, buf)
+            -- There is probably bug with HTML parser causing nvim to crash silently.
+            if lang == "html" then
+                return true
+            end
+            return false
+        end
     },
 }
 
