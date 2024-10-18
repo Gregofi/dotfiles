@@ -188,3 +188,5 @@ input * {
     xkb_variant ,qwerty
     xkb_options grp:alt_shift_toggle
 }
+
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway

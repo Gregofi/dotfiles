@@ -1,2 +1,3 @@
--- Requires the 'configs/init.lua' file
+-- Requires the 'configs/<file>.lua' file
 require("configs")
+require("local")
