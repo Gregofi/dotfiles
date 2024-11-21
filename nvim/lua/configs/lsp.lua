@@ -1,11 +1,4 @@
--- I would like to have these guys in the plugin folder,
--- but setting them up proves difficult.
-local lsp_zero = require('lsp-zero')
-lsp_zero.extend_lspconfig()
-
-lsp_zero.on_attach(function(client, bufnr)
-    lsp_zero.default_keymaps({buffer = bufnr})
-end)
+vim.opt.signcolumn = 'yes'
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
@@ -41,4 +34,19 @@ cmp.setup({
     end,
   },
   mapping = cmp.mapping.preset.insert({}),
+})
+
+vim.api.nvim_create_autocmd('LspAttach', {
+    desc = "LSP actions",
+    callback = function(event)
+        local opts = {buffer = event.buf}
+
+        vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
+        vim.keymap.set('n', 'gD', function() vim.lsp.buf.declaration() end, opts)
+        vim.keymap.set('n', '<F2>', function() vim.lsp.buf.rename() end, opts)
+        vim.keymap.set('n', 'gi', function() vim.lsp.buf.implementation() end, opts)
+        vim.keymap.set('n', 'gr', function() vim.lsp.buf.references() end, opts)
+        vim.keymap.set({'n', 'x'}, '<F3>', function() vim.lsp.buf.format({async = true}) end, opts)
+        vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
+    end
 })
