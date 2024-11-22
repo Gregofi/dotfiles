@@ -41,12 +41,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(event)
         local opts = {buffer = event.buf}
 
-        vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
-        vim.keymap.set('n', 'gD', function() vim.lsp.buf.declaration() end, opts)
-        vim.keymap.set('n', '<F2>', function() vim.lsp.buf.rename() end, opts)
-        vim.keymap.set('n', 'gi', function() vim.lsp.buf.implementation() end, opts)
-        vim.keymap.set('n', 'gr', function() vim.lsp.buf.references() end, opts)
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+        vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, opts)
+        vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+        vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
         vim.keymap.set({'n', 'x'}, '<F3>', function() vim.lsp.buf.format({async = true}) end, opts)
-        vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
+        vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+        vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
     end
 })
