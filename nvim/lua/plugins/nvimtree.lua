@@ -16,12 +16,15 @@ end
 Plugin.opts = {
     sort_by = "case_sensitive",
     view = {
-        adaptive_size = true,
+        width = 30,
     },
+    on_attach = on_attach,
     renderer = {
+        indent_markers = {
+            enable = true
+        },
         group_empty = true,
     },
-   on_attach = on_attach,
 }
 
 Plugin.dependencies = {
