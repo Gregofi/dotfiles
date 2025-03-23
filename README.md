@@ -12,6 +12,13 @@ It also updates its lazy-lock, so we don't want to just use `.source`, as that c
 Windows managers are also configured via its config instead of home manager.
 Keep it that way unless we move ALL our configs to NixOS (workstation will probably not comply to it).
 
+# TODO
+
+- Try installing NixOS on notebook -> will make sure the config is reusable.
+- Modularize the configs into multiple files.
+- Migrate to i3 configuration within nix.
+- Make separate configuration options for ntb and desktop.
+
 # Old notes
 
 ## Sway
