@@ -103,6 +103,11 @@ in
     openssl
     openssl.dev
     pkg-config
+
+    # python packages TODO: Maybe separate shell.nix file?
+    python312
+    python312Packages.requests
+    python312Packages.pytest
   ];
   environment.variables.EDITOR = "nvim";
 

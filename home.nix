@@ -46,11 +46,6 @@
     nodejs_23
     lua
     pnpm
-
-    # python packages TODO: Maybe separate shell.nix file?
-    python312
-    python312Packages.requests
-    python312Packages.pytest
   ];
 
   home.file = {
@@ -58,7 +53,7 @@
     # consider doing this guy via home manager
     # https://nix-community.github.io/home-manager/options.xhtml#opt-programs.i3status-rust.enable
     ".config/i3status-rust/config.toml".source = ./i3status-rs/config.toml;
-    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dotfiles/nvim";
+    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nix-config/nvim";
     ".config/alacritty" = {
       source = ./alacritty;
       recursive = true;
