@@ -44,8 +44,13 @@
     # toolchains
     rustup
     nodejs_23
-    python314
     lua
+    pnpm
+
+    # python packages TODO: Maybe separate shell.nix file?
+    python312
+    python312Packages.requests
+    python312Packages.pytest
   ];
 
   home.file = {
@@ -80,8 +85,10 @@
       ll = "ls -l";
       ".." = "cd ..";
       "update" = "nixos-rebuild switch --flake .";
-
+      # this bit of magic allows aliases to be used with sudo
+      sudo="sudo ";
       d = "docker";
+      p = "pnpm";
 
       # we could specify aliases in programs.git, but
       # then they would require git prefix, like `git co`.

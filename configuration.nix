@@ -100,6 +100,9 @@ in
     gnumake
     gcc14
     clang_multi
+    openssl
+    openssl.dev
+    pkg-config
   ];
   environment.variables.EDITOR = "nvim";
 
