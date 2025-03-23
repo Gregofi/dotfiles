@@ -48,33 +48,31 @@ in
   services.xserver = {
     enable = true;
 
-    displayManager = {
-      defaultSession = "none+i3";
-      lightdm = {
-        enable = true;
-      };
-
-      autoLogin = {
-        enable = true;
-	user = user;
-      };
-    };
+    displayManager.lightdm.enable = true;
 
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
         rofi
-	i3status
+	    i3status
       ];
     };
   };
 
-  programs.zsh.enable = true;
+  services.displayManager = {
+    defaultSession = "none+i3";
+    autoLogin = {
+      enable = true;
+      user = user;
+    };
+  };
 
+
+  programs.zsh.enable = true;
   users.users.gregofi = {
     isNormalUser = true;
     description = "gregofi";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
   };
 
@@ -105,6 +103,7 @@ in
   ];
   environment.variables.EDITOR = "nvim";
 
-  system.stateVersion = "24.11";
+  virtualisation.docker.enable = true;
 
+  system.stateVersion = "24.11";
 }

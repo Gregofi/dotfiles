@@ -36,6 +36,8 @@
 
     # fonts
     nerdfonts
+
+    docker-compose
   ];
 
   home.file = {
@@ -65,11 +67,22 @@
   programs.zsh = {
     enable = true;
     autocd = true;
-    # history = {
-    #   findNoDups = true;
-    # };
-    historySubstringSearch = {
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      ".." = "cd ..";
+      "update" = "nixos-rebuild switch --flake .";
+    };
+    oh-my-zsh = {
       enable = true;
+      theme = "agnoster";
+      plugins = [
+        "sudo"
+        "kubectl"
+        "rust"
+        "docker"
+        "docker-compose"
+      ];
     };
   };
 
