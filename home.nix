@@ -16,6 +16,8 @@
     ripgrep
     jq
     eza
+    tldr
+    tig
 
     # networking
     dnsutils # dig, nslookup
@@ -38,6 +40,12 @@
     nerdfonts
 
     docker-compose
+
+    # toolchains
+    rustup
+    nodejs_23
+    python314
+    lua
   ];
 
   home.file = {
@@ -72,6 +80,18 @@
       ll = "ls -l";
       ".." = "cd ..";
       "update" = "nixos-rebuild switch --flake .";
+
+      d = "docker";
+
+      # we could specify aliases in programs.git, but
+      # then they would require git prefix, like `git co`.
+      gco = "git checkout";
+      "gcm!" = "git commit --amend --no-edit";
+      gpsup = "git push";
+      gpsupf = "git push --force-with-lease";
+      gav = "git add -v";
+      grhh = "git reset --hard";
+    
     };
     oh-my-zsh = {
       enable = true;
