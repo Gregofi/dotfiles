@@ -62,7 +62,7 @@
 
   xsession = {
     enable = true;
-    initExtra = "xset r rate 250 50";
+    initExtra = "xset r rate 200 50";
   };
 
 
@@ -88,7 +88,7 @@
       # we could specify aliases in programs.git, but
       # then they would require git prefix, like `git co`.
       gco = "git checkout";
-      "gcm!" = "git commit --amend --no-edit";
+      "gcn!" = "git commit --amend --no-edit";
       gpsup = "git push";
       gpsupf = "git push --force-with-lease";
       gav = "git add -v";
