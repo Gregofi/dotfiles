@@ -113,6 +113,30 @@
     enableZshIntegration = true;
   };
 
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    defaultEditor = true;
+
+    extraPackages = with pkgs; [
+      ripgrep
+      luajit
+
+      # langservers
+      lua-language-server
+      nil
+      nixd
+      biome
+      typescript-language-server
+      rust-analyzer
+      llvmPackages_19.clang-tools
+    ];
+  };
+
+  home.sessionVariables.NIX_NEOVIM = 1;
+
   home.stateVersion = "24.11";
 
   programs.home-manager.enable = true;

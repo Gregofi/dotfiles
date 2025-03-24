@@ -1,26 +1,39 @@
 vim.opt.signcolumn = 'yes'
 
 require('mason').setup({})
-require('mason-lspconfig').setup({
-    ensure_installed = {
-        'clangd',
-        'rust_analyzer',
-    },
-    handlers = {
-        function(server_name)
-            require('lspconfig')[server_name].setup({})
-        end,
+if os.getenv('NIX_NEOVIM') ~= '1' then
+  require('mason-lspconfig').setup({
+      ensure_installed = {
+          'clangd',
+          'rust_analyzer',
+      },
+      handlers = {
+          function(server_name)
+              require('lspconfig')[server_name].setup({})
+          end,
 
-        clangd = function()
-            require('lspconfig').clangd.setup({
-                cmd = {
-                    "clangd",
-                    "--offset-encoding=utf-16",
-                }
-            })
-        end
-    },
-})
+          clangd = function()
+              require('lspconfig').clangd.setup({
+                  cmd = {
+                      "clangd",
+                      "--offset-encoding=utf-16",
+                  }
+              })
+          end
+      },
+  })
+else
+    -- from here: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
+    local servers = {
+        rust_analyzer = {},
+        ts_ls = {},
+        clangd = {},
+    }
+    
+    for k, v in pairs(servers) do
+        require("lspconfig")[k].setup(v)
+    end
+end
 
 local cmp = require('cmp')
 

@@ -29,3 +29,8 @@ We don't use sway right now cause of problems with screensharing in zoom.
 
 A [checklist](https://github.com/emersion/xdg-desktop-portal-wlr/wiki/%22It-doesn't-work%22-Troubleshooting-Checklist) in case screensharing doesn't work.
 
+# Other configs
+
+Configs of other people for inspiration:
+
+https://github.com/JManch/nixos/tree/main
