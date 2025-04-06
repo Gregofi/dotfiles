@@ -132,6 +132,7 @@
       typescript-language-server
       rust-analyzer
       llvmPackages_19.clang-tools
+      svelte-language-server
     ];
   };
 
