@@ -108,6 +108,9 @@ in
     python312
     python312Packages.requests
     python312Packages.pytest
+
+    qemu
+    quickemu
   ];
   environment.variables.EDITOR = "nvim";
 
