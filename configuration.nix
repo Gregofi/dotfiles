@@ -117,4 +117,8 @@ in
   virtualisation.docker.enable = true;
 
   system.stateVersion = "24.11";
+
+  security.pki.certificateFiles = [
+    /etc/nixos/certs/server.cert
+  ];
 }
