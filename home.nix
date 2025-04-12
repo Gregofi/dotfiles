@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     # browsers
     google-chrome
+    firefox
 
     # archives
     zip
