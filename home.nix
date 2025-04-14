@@ -47,6 +47,7 @@
     nodejs_23
     lua
     pnpm
+    bun
   ];
 
   home.file = {
