@@ -36,6 +36,7 @@
 
     # graphical env
     i3status-rust
+    xfce.thunar
 
     # fonts
     nerdfonts
@@ -48,6 +49,13 @@
     lua
     pnpm
     bun
+
+    zlib
+    qpdf # zlib-flate
+
+    gimp
+
+    vscode
   ];
 
   home.file = {

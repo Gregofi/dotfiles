@@ -93,8 +93,7 @@ in
     git
     alacritty
 
-    # for clipboard nvim to work
-    xclip
+    xclip # for clipboard nvim to work
 
     # toolchains
     gnumake
