@@ -55,7 +55,7 @@
 
     gimp
 
-    vscode
+    vscode-fhs
   ];
 
   home.file = {
