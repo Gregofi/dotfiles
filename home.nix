@@ -94,6 +94,7 @@
       sudo="sudo ";
       d = "docker";
       p = "pnpm";
+      n = "nvim";
 
       # we could specify aliases in programs.git, but
       # then they would require git prefix, like `git co`.
@@ -103,7 +104,6 @@
       gpsupf = "git push --force-with-lease";
       gav = "git add -v";
       grhh = "git reset --hard";
-    
     };
     oh-my-zsh = {
       enable = true;
