@@ -48,6 +48,10 @@ in
   services.xserver = {
     enable = true;
 
+    # doesnt work
+    layout = "us,cz";
+    xkbOptions = "grp:alt_shift_toggle";
+
     displayManager.lightdm.enable = true;
 
     windowManager.i3 = {

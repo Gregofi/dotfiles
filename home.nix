@@ -37,6 +37,7 @@
     # graphical env
     i3status-rust
     xfce.thunar
+    redshift
 
     # fonts
     nerdfonts
@@ -56,6 +57,7 @@
     gimp
 
     vscode-fhs
+    obsidian
   ];
 
   home.file = {
