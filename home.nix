@@ -50,6 +50,7 @@
     lua
     pnpm
     bun
+    go
 
     zlib
     qpdf # zlib-flate
