@@ -29,6 +29,8 @@ else
         ts_ls = {},
         clangd = {},
         svelte = {},
+        gopls = {},
+
     }
     
     for k, v in pairs(servers) do

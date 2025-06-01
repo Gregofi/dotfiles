@@ -51,6 +51,7 @@
     pnpm
     bun
     go
+    gopls
 
     zlib
     qpdf # zlib-flate
