@@ -25,6 +25,7 @@
     mtr
     nmap
     socat
+    wireshark
 
     btop
     iotop
