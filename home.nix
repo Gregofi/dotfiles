@@ -53,6 +53,7 @@
     bun
     go
     gopls
+    ghc
 
     zlib
     qpdf # zlib-flate
