@@ -30,7 +30,7 @@ else
         clangd = {},
         svelte = {},
         gopls = {},
-
+        hls = {},
     }
     
     for k, v in pairs(servers) do

@@ -54,6 +54,8 @@
     go
     gopls
     ghc
+    haskell-language-server
+    biome
 
     zlib
     qpdf # zlib-flate
