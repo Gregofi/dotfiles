@@ -1,3 +1,6 @@
+[env]
+WINIT_X11_SCALE_FACTOR = "1.2"
+
 [colors.primary]
 foreground = "#e0def4"
 background = "#232136"
