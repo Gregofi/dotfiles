@@ -31,6 +31,7 @@ else
         svelte = {},
         gopls = {},
         hls = {},
+        tailwindcss = {},
     }
     
     for k, v in pairs(servers) do

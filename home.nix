@@ -56,6 +56,7 @@
     ghc
     haskell-language-server
     biome
+    tailwindcss-language-server
 
     zlib
     qpdf # zlib-flate
