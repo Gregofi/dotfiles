@@ -65,6 +65,8 @@
 
     vscode-fhs
     obsidian
+
+    godot
   ];
 
   home.file = {
