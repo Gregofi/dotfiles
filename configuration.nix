@@ -34,6 +34,7 @@ in
   services.printing.enable = true;
 
   # Enable sound with pipewire.
+  hardware.pulseaudio.package = pkgs.pulseaudioFull;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -116,6 +117,8 @@ in
     quickemu
   ];
   environment.variables.EDITOR = "nvim";
+  # hack needed for some c++ programs to find libstdc++.so.6
+  environment = { sessionVariables = { LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib"; }; };
 
   virtualisation.docker.enable = true;
 

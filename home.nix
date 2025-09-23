@@ -57,6 +57,7 @@
     haskell-language-server
     biome
     tailwindcss-language-server
+    just
 
     zlib
     qpdf # zlib-flate
@@ -65,8 +66,6 @@
 
     vscode-fhs
     obsidian
-
-    godot
   ];
 
   home.file = {
