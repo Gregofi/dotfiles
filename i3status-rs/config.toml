@@ -5,15 +5,10 @@ theme = "solarized-light"
 icons = "material-nf"
 
 [[block]]
-block = "net"
-device = 'br\-[0-9a-f]{12}'
-[[block.click]]
-button = "left"
-cmd = "alacritty -e nmtui "
+block = "battery"
 
 [[block]]
 block = "net"
-device = 'docker\d+'
 [[block.click]]
 button = "left"
 cmd = "alacritty -e nmtui "
