@@ -107,6 +107,7 @@ in
     openssl
     openssl.dev
     pkg-config
+    protobuf_29
 
     # python packages TODO: Maybe separate shell.nix file?
     python312
